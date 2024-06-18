@@ -81,7 +81,7 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DB_URL'),
+            'url' => env('DB_URL', 'postgresql://MiniGamesDB_owner:Qh1Szn8cdxwo@ep-patient-dawn-a2o8e66f.eu-central-1.aws.neon.tech/MiniGamesDB?sslmode=require'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'laravel'),
